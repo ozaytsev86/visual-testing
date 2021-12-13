@@ -1,6 +1,9 @@
 name: Deploy to Chromatic
 
-on: push
+on:
+  pull_request:
+      branches:
+        - main
 
 jobs:
   chromatic-deployment:
